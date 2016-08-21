@@ -1,0 +1,44 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin serif() {
+	font-family: 'Lora', 'Times New Roman', serif;
+}
+
+@mixin sans-serif (){
+	font-family: "PT Sans", 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+}
+
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin btn-custom{
+    background: 0 0 #ffffff;
+    border: 1px solid $base-color-5;
+    border-radius: 3px;
+    color: $base-color-5;
+    font-family: sans-serif();
+    font-size: 16px;
+    line-height: inherit;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    &:hover, &:active, &:focus {
+		  background-color: $base-color-2;
+	  }
+}

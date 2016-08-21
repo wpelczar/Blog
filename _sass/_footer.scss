@@ -1,0 +1,20 @@
+
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $base-color-4;
+  a{
+    color: #333;
+
+  }
+}
+
+.footer-down{
+  background-color: $base-color-5;
+  color: $base-color-3;
+  height: 40px;
+  .copyright{
+    @include vertical-align();
+  }
+}
