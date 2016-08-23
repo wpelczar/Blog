@@ -20,6 +20,14 @@
     transition:         $transition;
 }
 
+@mixin transform($transform...) {
+    -moz-transform:    $transform;
+    -o-transform:      $transform;
+    -webkit-transform: $transform;
+    -ms-transform:     $transform;
+    transform:         $transform;
+}
+
 @mixin vertical-align($position: relative) {
   position: $position;
   top: 50%;

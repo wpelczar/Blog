@@ -3,7 +3,7 @@
   <div class="top-bar"></div>
 
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
+    <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -18,8 +18,13 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           {% for my_page in site.pages %} {% if my_page.title %}
-          <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+          <li>
+            <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          </li>
           {% endif %} {% endfor %}
+          <li>
+            <a href="#search" class="search-button"><i class="fa fa-search"> </i></a>
+          </li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
