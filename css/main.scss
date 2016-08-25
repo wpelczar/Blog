@@ -6,64 +6,12 @@
 @import
         "variables",
         "mixins",
+        "base",
         "footer",
         "post",
         "syntax-highlighting",
         "modal",
-        "header"
+        "header" 
 ;
 ///////////////////////////////////////////////
-
-
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-body{
-  @include sans-serif();
-  line-height: 1.5;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @include sans-serif();
-}
-
-a {
-  color: $base-color-5;
-  &:hover,
-  &:focus{
-    color: $base-color-1;
-    text-decoration: none;
-  }
-  @include transition(color 0.3s);
-}
-
-.move-top{
-  position: fixed;
-  bottom: 0;
-  right: 10px;
-  cursor: pointer;
-  font-size: 3em;
-  color: rgba(0, 0, 0, 0.6);
-  &:hover, &:active, &:focus {
-    color: $base-color-1;
-  }
-}
-
-.hide {
-  display: none;
-}
-
-ul
-{
-    list-style-type: none;
-}
-
 
