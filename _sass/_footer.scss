@@ -4,6 +4,9 @@
   background-color: $base-color-4;
   a{
     color: #333;
+    &:hover, &:focus{
+      color: $base-color-1;
+    }
   }
 }
 

@@ -16,7 +16,6 @@
   .post-title{
     margin-bottom: 30px;
     font-size: 55px;
-    
   }
 }
 
@@ -36,6 +35,9 @@
     color: gray;
     @include transition(color 0s);
     white-space: nowrap;
+    &:hover, &:focus{
+      color: $base-color-1;
+    }
   }
 
   .tag{
