@@ -1,7 +1,10 @@
+---
+---
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  json: '/search.json',
+  json: '{{ '/search.json' | prepend: site.baseurl }}',
+  
 })
 
 $('a[href="#search"]').on('click', function (event) {
