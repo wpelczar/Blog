@@ -11,10 +11,10 @@ $(function(){
     else{
       $('.move-top').addClass('hide');
     }
-  })
+  });
 
   $('.move-top').click(function () {
     $("html, body").animate({ scrollTop: 0 }, "slow");
     return false;
-  })
+  });
 }) 
