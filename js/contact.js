@@ -1,3 +1,5 @@
+---
+---
 $(document).ready(function () {
 
     // Test for placeholder support
@@ -41,6 +43,7 @@ $(document).ready(function () {
             }
         });
     }
+
     // validation
 
     $.validator.setDefaults({
@@ -64,10 +67,6 @@ $(document).ready(function () {
         }
     });
 
-    $.validator.methods.email = function(value, element){
-      return this.optional( element ) || /[a-z]+@[a-z]+\.[a-z]+/.test( value );
-    }
-
     $('#contact-form').validate({
         rules: {
             email: {
@@ -83,15 +82,41 @@ $(document).ready(function () {
         },
         messages: {
             email: {
-                email: "Enter valid email address",
-                required: "Enter your email address"
+                email: "Please enter valid email address",
+                required: "Please enter your email address"
             },
             name: {
-                required: "Enter your name"
+                required: "Please enter your name"
             },
             message: {
-                required: "Enter message"
+                required: "Please enter message"
             }
+        },
+        submitHandler: function () {
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var subject = $('#subject').val()
+            var message = $('#message').val()
+
+            $.ajax({
+                url: '{{ "https://formspree.io/"|| append:site.email }}',
+                method: "POST",
+                data: {
+                    name: name,
+                    email: email,
+                    _subject: subject,
+                    subject: subject,
+                    message: message
+                },
+                dataType: "json",
+                success: function () {;
+                    $('#contact-form .form-control').val('');
+                    alert('success')
+                },
+                error: function () {
+                    alert('error');
+                }
+            });
         }
     })
 });
