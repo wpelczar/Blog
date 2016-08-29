@@ -97,6 +97,8 @@ $(document).ready(function () {
             var email = $('#email').val();
             var subject = $('#subject').val()
             var message = $('#message').val()
+            
+            $('.btn-submit')
 
             $.ajax({
                 url: '{{ "https://formspree.io/"|| append:site.email }}',
@@ -111,10 +113,12 @@ $(document).ready(function () {
                 dataType: "json",
                 success: function () {;
                     $('#contact-form .form-control').val('');
-                    alert('success')
+                    $('#contact-success-info').show();
+                    $('#contact-error-info').hide();
                 },
                 error: function () {
-                    alert('error');
+                    $('#contact-error-info').show();
+                    $('#contact-success-info').hide();
                 }
             });
         }

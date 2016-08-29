@@ -26,6 +26,9 @@ textarea {
 .js-unhighlight-label {
 	color: #999 
 }
-.btn-start-order {
+.btn-submit {
 	@include btn-custom();
+}
+#contact-form {
+	margin-bottom: 20px;
 }
