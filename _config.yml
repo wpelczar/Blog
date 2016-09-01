@@ -19,3 +19,7 @@ rss: "https://wpelczar.github.io/blog/feed.xml"
 markdown: kramdown
 kramdown:
   input: GFM
+exclude: [ "typings",
+  "typings.json",
+  "jsconfig.json"
+]
