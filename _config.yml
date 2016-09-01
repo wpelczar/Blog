@@ -21,5 +21,8 @@ kramdown:
   input: GFM
 exclude: [ "typings",
   "typings.json",
-  "jsconfig.json"
+  "jsconfig.json",
+  "package.json",
+  "node_modules",
+  "gulpfile.js"
 ]
