@@ -32,7 +32,11 @@ layout: default
       <div class="post-content" itemprop="articleBody">
         {{ content }}
       </div>
-
+      <footer class="post-footer">
+        {% if site.disqus_shortname and page.comments == true %}
+          <div id="disqus_thread"></div>
+        {% endif %}
+      </footer>
     </article>
   </div>
 </div>

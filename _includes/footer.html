@@ -47,3 +47,4 @@
 <script src="{{ '/js/libs/jquery.validate.min.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/js/search.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/js/contact.js' | prepend: site.baseurl }}"></script>
+{% if page.comments %}{% include disqus.html %}{% endif %}
