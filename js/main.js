@@ -1,14 +1,14 @@
-$(function(){
+$(function () {
   var scrollTopTreshold = 10;
-  if($(window).scrollTop() <= scrollTopTreshold){
+  if ($(window).scrollTop() <= scrollTopTreshold) {
     $('.move-top').addClass('hide');
   }
 
-  $(window).on('scroll', function(){
-    if($(window).scrollTop() > scrollTopTreshold){
+  $(window).on('scroll', function () {
+    if ($(window).scrollTop() > scrollTopTreshold) {
       $('.move-top').removeClass('hide');
     }
-    else{
+    else {
       $('.move-top').addClass('hide');
     }
   });
@@ -16,5 +16,9 @@ $(function(){
   $('.move-top').click(function () {
     $("html, body").animate({ scrollTop: 0 }, "slow");
     return false;
+  });
+
+  $('[data-hide]').on('click', function () {
+    $('#' + $(this).attr('data-hide')).hide();
   });
 }) 

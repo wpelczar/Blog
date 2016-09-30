@@ -122,5 +122,11 @@ $(document).ready(function () {
                 }
             });
         }
-    })
+    });
+
+    // hide info messages on contact form click
+    $('#contact-form').on('click', function(){
+        $('#contact-success-info').hide();
+        $('#contact-error-info').hide();
+    });
 });
