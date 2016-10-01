@@ -21,14 +21,13 @@ layout: default
           </span>
           {% endif %}
           <span class="post-comments-icon">
-              <a href="#">
+              <a href="#disqus_thread">
                 <i class="fa fa-comments"></i>
-                <span>10 komentarzy</span>
+                <span class="disqus-comment-count" data-disqus-url="{{ page.url || prepend: site.baseurl || prepend: site.url }}">comments</span>
           </a>
           </span>
         </div>
       </header>
-
       <div class="post-content" itemprop="articleBody">
         {{ content }}
       </div>
