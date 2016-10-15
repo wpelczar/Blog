@@ -47,5 +47,12 @@
 <script src="{{ '/js/libs/jquery.validate.min.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/js/search.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/js/contact.js' | prepend: site.baseurl }}"></script>
-{% if page.comments %}{% include disqus.html %}{% endif %}
+{% if page.comments %}
+  {% include disqus.html %}
+{% endif %}
+
 {% include disqus_count.html %}
+
+{% if jekyll.environment == 'production' %}
+  {% include analytics.html %}
+{% endif %}

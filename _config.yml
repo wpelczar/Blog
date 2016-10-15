@@ -15,7 +15,7 @@ github_username:  wpelczar
 permalink: pretty
 rss: "https://wpelczar.github.io/blog/feed.xml"
 disqus_shortname: wpelczar-blog
-
+google_analytics: UA-85733142-1
 # Build settings
 markdown: kramdown
 kramdown:
