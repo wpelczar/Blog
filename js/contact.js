@@ -95,10 +95,14 @@ $(document).ready(function () {
         submitHandler: function () {
             var name = $('#name').val();
             var email = $('#email').val();
-            var subject = $('#subject').val()
-            var message = $('#message').val()
+            var subject = $('#subject').val();
+            var message = $('#message').val();
+               
+            if(subject === ""){
+                subject = "[empty subject]";
+            }
             
-            $('.btn-submit')
+            $('.btn-submit');
 
             $.ajax({
                 url: '{{ "https://formspree.io/"|| append:site.email }}',
