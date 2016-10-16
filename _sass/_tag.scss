@@ -1,0 +1,62 @@
+.tag{
+  background: #eee;
+  padding: 3px;
+  font-size: 14px;
+  color: $base-color-5;
+  @include border-radius(5px);
+  &:hover,
+  &:focus{
+    background: $base-color-1;
+    cursor: pointer;
+    color: $base-color-5;
+  }
+}
+
+.tags{
+  margin-right: 10px;
+}
+
+.tags-expo {
+  :target:before {
+    content:"";
+    display:block;
+    height:50px; /* fixed header height*/
+    margin:-50px 0 0; /* negative fixed header height */
+  }
+}
+
+.tags-expo-list{
+  line-height: 2.5;
+  .tag{
+    font-size: 16px;
+    padding: 5px;
+    margin-right: 3px;
+  } 
+}
+.tag-wrapper{
+    display: inline-block;
+}
+
+.tags-expo-section{
+  .tag-name{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .tags-expo-posts{
+    .post-link{
+      @include transition(color 0s);
+      font-size: 28px;
+    }
+    .post-date{
+      font-size: 16px;
+    }
+  }
+  ul li{
+    list-style-type: circle;
+      &:hover,
+      &:focus{
+         list-style-type: disc;
+          
+      }
+  }
+}

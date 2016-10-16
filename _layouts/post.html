@@ -10,13 +10,13 @@ layout: default
         <div class="post-info text-center">
           <span class="post-date">
               <i class="fa fa-calendar"></i>
-              <span>{{ page.date | date: "%b %-d, %Y" }}</span>
+              <span>{{ page.date | date: "%d/%m/%Y" }}</span>
           </span>
           {% if page.tags.size > 0 %}
           <span class="tags">
               <i class="fa fa-tags"></i>
               {% for tag in page.tags %}
-              <span class="tag">{{ tag }}</span>
+                <a href="{{ site.baseurl}}/tags#{{tag | slugify}}" class="tag">{{ tag }}</a>
               {% endfor %}
           </span>
           {% endif %}

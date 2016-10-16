@@ -4,6 +4,7 @@ title:  "Welcome to Jekyll3!"
 date:   2016-07-31 07:49:23 +0200
 categories: jekyll update
 comments: true
+tags: [Roslyn, Debuging, MVC, F#, Dependency Injection, Visual Studio]
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

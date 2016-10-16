@@ -35,27 +35,6 @@
     color: gray;
     @include transition(color 0s);
     white-space: nowrap;
-    &:hover, &:focus{
-      color: $base-color-1;
-    }
-  }
-
-  .tag{
-    background: #eee;
-    padding: 3px;
-    font-size: 14px;
-    color: $base-color-5;
-    white-space: nowrap;
-    @include border-radius(5px);
-    &:hover,
-    &:focus{
-      background: $base-color-1;
-      cursor: pointer;
-    }
-  }
-
-  .tags{
-    margin-right: 10px;
   }
 }
 
@@ -65,3 +44,10 @@
   border-top: 1px solid $base-color-3; 
 }
 
+.post-comments-icon{
+  a{
+    &:hover, &:focus{
+      color: $base-color-1;
+    }
+  }
+}
