@@ -31,6 +31,7 @@
 .post-info{
   margin: 5px 0 15px 0;
   color: gray;
+  line-height: 2;
   a{
     color: gray;
     @include transition(color 0s);
@@ -45,6 +46,7 @@
 }
 
 .post-comments-icon{
+  display: inline-block;
   a{
     &:hover, &:focus{
       color: $base-color-1;
