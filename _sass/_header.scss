@@ -4,6 +4,7 @@
   height: 320px;
   margin: 0 0 30px 0;
   position: relative;
+  padding: 50px 0 0 0;
 }
 
 .site-title{
@@ -62,6 +63,13 @@
   text-transform: uppercase;
 }
 
+hr.small{
+    max-width: 100px;
+    margin: 15px auto;
+    border-width: 4px;
+    border-color: white;
+}
+
 @media(max-width:600px){
   .top-bar{
     height: 200px;
@@ -71,6 +79,9 @@
   }
   .site-subtitle{
     font-size: 25px;
+  }
+  hr.small{
+    margin: 10px auto;
   }
 }
 
@@ -83,5 +94,8 @@
   }
   .site-subtitle{
     font-size: 20px;
+  }
+  hr.small{
+    margin: 5px auto;    
   }
 }
