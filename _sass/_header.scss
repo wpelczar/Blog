@@ -3,16 +3,41 @@
   background-size: 100%;
   height: 320px;
   margin: 0 0 30px 0;
+  position: relative;
 }
 
-.top-bar-text{
-  color: $base-color-3;
+.site-title{
+  color: white;
+  font-size: 50px; 
+  display: block;
+  font-weight: bold;
+}
+
+.site-subtitle{
+  color: white;
   font-size: 30px; 
   display: block;
 }
 
+.overlay::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.60);
+}
+
+.site-heading{
+  @include vertical-align();
+  text-align: center;
+  z-index: 2;
+}
+
 .navbar-default{
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   border: none;
   @include border-radius(0);
   .navbar-brand{
@@ -39,10 +64,22 @@
   .top-bar{
     height: 200px;
   }
+  .site-title{
+    font-size: 35px;
+  }
+  .site-subtitle{
+    font-size: 25px;
+  }
 }
 
 @media(max-width:350px){
   .top-bar{
     height: 150px;
+  }
+    .site-title{
+    font-size: 30px;
+  }
+  .site-subtitle{
+    font-size: 20px;
   }
 }
