@@ -63,3 +63,21 @@
         }
     }
 }
+    
+@media(max-width:760px){
+    #search-input{
+        font-size: 45px;
+    }
+    #results-container{
+        font-size: 25px;
+    }
+}
+
+@media(max-width:480px){
+    #search-input{
+        font-size: 30px;
+    }
+    #results-container{
+        font-size: 20px;
+    }
+}
