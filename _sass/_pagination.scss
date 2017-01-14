@@ -1,0 +1,33 @@
+.pagination{
+  text-align: center;
+  width: 100%;
+}
+.next, .previous{
+  border: 1px solid gray;
+  color: $base-color-5;
+  @include border-radius(5px);
+  &:hover,
+  &:focus{
+    background: $base-color-1;
+    cursor: pointer;
+    color: $base-color-5;
+  }
+  padding: 3px;
+  width: 100px;
+  display: inline-block;
+}
+
+.disabled{
+  color: #ddd;
+  border-color: #ddd; 
+  &:hover,
+  &:focus{
+    cursor: auto;
+    color: #ddd;
+    background: #fff;
+  }
+}
+
+.page_number{
+  margin: 0 10px;
+}

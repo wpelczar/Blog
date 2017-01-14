@@ -16,6 +16,8 @@ permalink: pretty
 rss: "https://wpelczar.github.io/blog/feed.xml"
 disqus_shortname: wpelczar-blog
 google_analytics: UA-85733142-1
+paginate:    5
+paginate_path: "page:num"
 # Build settings
 markdown: kramdown
 kramdown:
@@ -27,3 +29,5 @@ exclude: [ "typings",
   "node_modules",
   "gulpfile.js"
 ]
+gems:
+  - jekyll-paginate
