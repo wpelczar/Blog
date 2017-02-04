@@ -46,15 +46,15 @@ layout: default
     <!-- Pagination links -->
     <div class="pagination">
       {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">Previous</a>
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">Poprzednia</a>
       {% else %}
-        <span class="previous disabled">Previous</span>
+        <span class="previous disabled">Poprzednia</span>
       {% endif %}
-      <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      <span class="page_number ">Strona: {{ paginator.page }} z {{ paginator.total_pages }}</span>
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Next</a>
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Następna</a>
       {% else %}
-        <span class="next disabled">Next</span>
+        <span class="next disabled">Następna</span>
       {% endif %}
     </div> 
   </div>

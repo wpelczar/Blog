@@ -1,36 +1,36 @@
 --- 
 layout: page
-title: Contact
+title: Kontakt
 permalink: /contact/ 
 ---
 <form id="contact-form" class="form" method="POST" role="form">
   <div class="form-group">
-    <label class="form-label" for="name">Name</label>
-    <input type="text" class="form-control" id="name" name="name" placeholder="Name" tabindex="1">
+    <label class="form-label" for="name">Imię</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Imię" tabindex="1">
   </div>
   <div class="form-group">
     <label class="form-label" for="email">Email</label>
     <input type="email" class="form-control" id="email" name="email" placeholder="Email" tabindex="2">
   </div>
   <div class="form-group">
-    <label class="form-label" for="subject">Subject</label>
-    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3">
+    <label class="form-label" for="subject">Temat</label>
+    <input type="text" class="form-control" id="subject" name="subject" placeholder="Temat" tabindex="3">
   </div>
   <div class="form-group">
-    <label class="form-label" for="message">Message</label>
-    <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4" required
-      data-validation-required-message="Please enter your message."></textarea>
+    <label class="form-label" for="message">Wiadomość</label>
+    <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Wiadomość..." tabindex="4" required
+      data-validation-required-message="Wpisz wiadomość."></textarea>
   </div>
   <div class="text-center">
-    <button id="btn-contact-submit" type="submit" class="btn btn-submit">send</button>
+    <button id="btn-contact-submit" type="submit" class="btn btn-submit">wyślij</button>
   </div>
 </form>
 
 <div id="contact-success-info" class="alert alert-success collapse">
   <button type="button" class="close" data-hide="contact-success-info" aria-hidden="true">×</button>
-  <strong>Success!</strong> Thank you for your message. I will be in touch!
+  <strong>Sukces!</strong> Dziękuję za wysłanie wiadomości. Niedługo się odezwę!
 </div>
 <div id="contact-error-info" class="alert alert-danger collapse">
   <button type="button" class="close" data-hide="contact-error-info" aria-hidden="true">×</button>
-  <strong>Error!</strong> Sorry there was an error sending your message. Please try again later.
+  <strong>Błąd!</strong> Przykro mi ale wystąpił błąd podczas wysyłania wiadommości. Proszę spróbuj ponownie później.
 </div>

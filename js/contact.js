@@ -82,14 +82,14 @@ $(document).ready(function () {
         },
         messages: {
             email: {
-                email: "Please enter valid email address",
-                required: "Please enter your email address"
+                email: "Wpisz poprawny adres email",
+                required: "Wpisz swój email"
             },
             name: {
-                required: "Please enter your name"
+                required: "Wpisz swoje imię"
             },
             message: {
-                required: "Please enter message"
+                required: "Wpisz wiadomość"
             }
         },
         submitHandler: function () {
