@@ -22,7 +22,7 @@ gulp.task("browser-sync", ['build'], function(){
 });
 
 gulp.task('watch', function () {
-    gulp.watch(['index.html', '_layouts/*.html', '_sass/*.*', '_posts/*.md', 'articles/*.html', 'profile/*.html', 'work/*.html', 'js/**/*', 'images/*'], ['rebuild']);
+    gulp.watch(['*.html', '*.md', '_layouts/*.html', '_sass/*.*', '_posts/*.md', 'articles/*.html', 'profile/*.html', 'work/*.html', 'js/**/*', 'images/*'], ['rebuild']);
 });
 
 gulp.task('default', ["browser-sync", "watch"]);

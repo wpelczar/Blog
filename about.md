@@ -4,8 +4,16 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Cześć.
 
-You can find the source code for the Jekyll new theme at:
+Nazywam się **Wojtek Pelczar**. 
 
-You can find the source code for Jekyll at
+Mieszkam we Wrocławiu. Tutaj ukończyłem Politechnikę i od grudnia 2014 roku pracuję jako **programista .NET**.
+
+Ten blog ma mi pomóc rozwijać swoje zainteresowania i być zapisem tego co do tej pory udało mi się nauczyć.
+
+Jeślie checsz się ze mną skontaktować to zapraszam do skorzystania z **[formularza][contact-page]**.
+
+![Autor - zdjęcie](/images/me.jpg)
+
+[contact-page]: {{ "/contact" | prepend: site.baseurl }}
