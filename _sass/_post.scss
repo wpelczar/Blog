@@ -23,6 +23,9 @@
 .post-entry,  .post-content{
   @include sans-serif();
   font-size: 18px;
+  a {
+    text-decoration: underline;
+  }
 }
 
 .post-date{
@@ -60,5 +63,6 @@
   a{
     padding: 0 5px 1px 5px;
     border-bottom: 1px solid $base-color-1;
+    text-decoration: none;
   }
 }

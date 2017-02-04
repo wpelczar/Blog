@@ -5,6 +5,7 @@
   margin: 0 0 30px 0;
   position: relative;
   padding: 50px 0 0 0;
+  text-align: center;
 }
 
 .site-title{
@@ -37,6 +38,7 @@
   @include vertical-align();
   text-align: center;
   z-index: 2;
+  display: inline-block;
 }
 
 .navbar-default{
