@@ -14,6 +14,6 @@ Ten blog ma mi pomóc rozwijać swoje zainteresowania i być zapisem tego co do 
 
 Jeślie checsz się ze mną skontaktować to zapraszam do skorzystania z **[formularza][contact-page]**.
 
-![Autor - zdjęcie](/images/me.jpg)
+![Autor - zdjęcie]({{ "/images/me.jpg" | prepend: site.baseurl}} )
 
 [contact-page]: {{ "/contact" | prepend: site.baseurl }}
