@@ -9,6 +9,7 @@
   font-size: 40px;
   font-weight: 800;
   margin: 10px 0 10px 0;
+  text-align: center;
 }
 
 .post{
@@ -22,6 +23,11 @@
 .post-entry,  .post-content{
   @include sans-serif();
   font-size: 18px;
+}
+.post-entry{
+  p{
+    margin: 0px;
+  }
 }
 
 .post-date{
@@ -51,5 +57,13 @@
     &:hover, &:focus{
       color: $base-color-1;
     }
+  }
+}
+
+.read-more{
+  text-align: center;
+  a{
+    padding: 0 5px 1px 5px;
+    border-bottom: 1px solid $base-color-1;
   }
 }
