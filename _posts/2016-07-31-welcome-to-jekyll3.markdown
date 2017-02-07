@@ -2,7 +2,6 @@
 layout: post
 title:  "Welcome to Jekyll3!"
 date:   2016-07-31 07:49:23 +0200
-categories: jekyll update
 comments: true
 tags: [Roslyn, Debuging, MVC, F#, Dependency Injection, Visual Studio]
 ---

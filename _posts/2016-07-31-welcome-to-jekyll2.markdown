@@ -2,7 +2,6 @@
 layout: post
 title:  "Welcome to Jekyll2!"
 date:   2016-07-31 07:49:23 +0200
-categories: jekyll update
 comments: true
 tags: MVC C# Blog Development TeamCity JavaScript 
 ---
