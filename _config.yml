@@ -10,13 +10,13 @@ title: Wojciech Pelczar Blog
 email: wpelczar1@gmail.com
 description: Programming Blog by Wojciech Pelczar
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://wpelczar.github.io" # the base hostname & protocol for your site
+url: "http://wpelczar.com" # the base hostname & protocol for your site
 github_username:  wpelczar
 permalink: pretty
-rss: "https://wpelczar.github.io/blog/feed.xml"
+rss: "http://wpelczar.com/feed.xml"
 disqus_shortname: wpelczar-blog
 google_analytics: UA-85733142-1
-paginate:    5
+paginate: 5
 paginate_path: "page:num"
 # Build settings
 markdown: kramdown
