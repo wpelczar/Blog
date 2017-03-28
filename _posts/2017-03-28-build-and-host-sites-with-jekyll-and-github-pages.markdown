@@ -85,7 +85,7 @@ Teraz u wybranego dostawcy musimy dodać rekordy DNS.
 
 W moim przypadku tak wygląda screen ze strony GoDaddy:
 
-![Ustawienia DNS dla bloga]({{ "/images/2017-03-28/blogDNS.png" | prepend: site.baseurl}} )
+![Ustawienia DNS dla bloga]({{ "/images/2017-03-28/BlogDNS.png" | prepend: site.baseurl}} )
 
 Czekamy, aż wpisy się rozpropagują. Teoretycznie może to zająć nawet kilka godzin.
 
