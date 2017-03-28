@@ -6,12 +6,19 @@
       background-color: lighten($base-color-2, 20);
     }
 
+    pre{
+      border: none;
+      code{
+        color: #f8f8f2;
+      }
+    }
+
 .highlight {
     background: #272822;
+    border-radius: 4px; 
 
     .highlighter-rouge & {
-      background: #272822;
-      
+      background: #272822
     }
     
     .lineno{
@@ -19,6 +26,7 @@
     }
     pre { 
       background-color: #272822; 
+      color:#f8f8f2;
       border: none;
     }
 

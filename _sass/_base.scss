@@ -44,11 +44,6 @@ a {
   display: none;
 }
 
-ul
-{
-    list-style-type: none;
-}
-
 .page-container{
   margin-bottom: 50px;
 }
@@ -57,3 +52,7 @@ ul
   font-weight: bold;
   margin: 0 0 30px 0;
 } 
+
+p{
+  margin: 15px 0;
+}
